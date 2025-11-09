@@ -41,7 +41,7 @@ In another terminal, type
 ```
 gz topic -e -t /imu
 ```
-To see a change in the imu readings, follow the bottom half of the steps this [section](#Concepts to know). And watch the imu readings change.
+To see a change in the imu readings, follow the Diff_drive plugin steps in the [Concepts to know](#concepts-to-know) section. And watch the imu readings change.
 ### Moving the robot using keystrokes
 Go to the top right of the GUI, and select Key publisher. Then press Play. Use the arrow keys to move the robot.
 
