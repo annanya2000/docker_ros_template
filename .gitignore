@@ -1,0 +1,12 @@
+.vscode/*
+.dir-locals.el
+.projectile
+__pycache__/
+.vimrc
+exrc
+
+build/
+install/
+log/
+
+container/latest.log
