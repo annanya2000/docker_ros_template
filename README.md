@@ -18,6 +18,7 @@ gz topic -t "/cmd_vel" -m gz.msgs.Twist -p "linear: {x: 0.5}, angular: {z: 0.05}
 
 In the GUI, click the Play button on the bottom left. You should see the vehicle start turning left.
 
+
 ### Viewing a custom world
 In the terminal, enter
 ```
@@ -30,6 +31,17 @@ gz topic -e -t /world/world_demo/stats
 
 You can include models created by other people from here: https://app.gazebosim.org/dashboard
 
+### Adding and listening to sensors
+In the terminal, enter
+```
+gz sim sensor_tutorial.sdf
+```
+
+In another terminal, type
+```
+gz topic -e -t /imu
+```
+To see a change in the imu readings, follow the bottom half of the steps this [section](#Concepts to know). And watch the imu readings change.
 ### Moving the robot using keystrokes
 Go to the top right of the GUI, and select Key publisher. Then press Play. Use the arrow keys to move the robot.
 
