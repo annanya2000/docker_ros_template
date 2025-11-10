@@ -70,6 +70,16 @@ gz sim sensor_tutorial.sdf
 ```
 Hit Play and watch the robot rotate and move!
 
+### Loading a URDF
+In the first terminal, type
+```
+gz sim empty.sdf
+```
+In the second terminal, type
+```
+gz service -s /world/empty/create --reqtype gz.msgs.EntityFactory --reptype gz.msgs.Boolean --timeout 1000 --req 'sdf_filename: "/ros2_ws/src/rrbot.urdf", name: "urdf_model"'
+```
+
 ## Moving the robot using keystrokes
 Go to the top right of the GUI, and select Key publisher. Then press Play. Use the arrow keys to move the robot.
 
